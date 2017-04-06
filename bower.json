@@ -1,0 +1,15 @@
+{
+  "name": "projetAngularJs",
+  "version": "1.0.0",
+  "main": "path/to/main.css",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt"
+  ],
+  "dependencies": {"angularjs":"1.6.4","Font-Awesome":"4.7.0",
+    "font-awesome": "Font-Awesome#4.7.0",
+    "angular": "angularjs#1.6.4",
+    "bootstrap": "3.3.7"
+  },
+  "devDependencies": {}
+}
