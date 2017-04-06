@@ -1,296 +1,243 @@
-h1,h2
-{
-  text-align: center;
-  margin:0;
-}
+[   
 
-header
-{
-  background:#1D1F20;
-  position: fixed;
-  color:#fff;
-  width: 100%;
-  z-index: 99999;
-  border-bottom: thin solid #ffffff;
-  margin-top:-150px;
-}
-.place
-{
-margin-top:150px
+    {
+        "category": "small",
+        "dogName": "Chihuahua",
+        "dogReference": "SM001",
+        "weight/height": "1 à 3kg et 15 à 23cm ",
+        "description": "Petit chien de compagnie",
+        "priceMale": 1500,
+        "priceFemale": 1700,
+        "longevity": "12 ans",
+        "picture": "assets/img/mini/chihuahua.jpg",
+        "topSelling": false
+    },
+    {
+        "category": "small",
+        "dogName": "Pinsher",
+        "dogReference": "SM002",
+        "weight/height": "5kg et 30cm",
+        "description": "mini-chien , aimant et calin",
+        "priceMale": 1000,
+        "priceFemale": 1200,
+        "longevity": "12 ans",
+        "picture": "assets/img/mini/pinsher.jpg",
+        "topSelling": false
+    },
+    {
+        "category": "small",
+        "dogName": "Shih-tzu",
+        "dogReference": "SM003",
+        "weight/height": " 4 à 8kgs et 28cm",
+        "description": "gentil",
+        "priceMale": 800,
+        "priceFemale": 900,
+        "longevity": "10 à 16ans",
+        "picture": "assets/img/mini/Shih-tzu.jpg",
+        "topSelling": false
+    },
+    {
+        "category": "small",
+        "dogName": "spitz",
+        "dogReference": "SM003",
+        "weight/height": "10 kg et 34 cm",
+        "description": "gentil",
+        "priceMale": 700,
+        "priceFemale": 900,
+        "longevity": "14 ans",
+        "picture": "(chemin de la photo)",
+        "topSelling": true
+    },
+    {
+        "category": "small",
+        "dogName": "yorkshire",
+        "dogReference": "SM004",
+        "weight/height": "3 à 5 kg et 17 cm",
+        "description": "gentil",
+        "priceMale": 1200,
+        "priceFemale": 1400,
+        "longevity": "15 ans",
+        "picture": "assets/img/mini/Yorkshire",
+        "topSelling": false
+    },
+    {
+        "category": "medium",
+        "dogName": "basset",
+        "dogReference": "ME001",
+        "weight/height": "25 kg et 34 cm",
+        "description": "gentil",
+        "priceMale": 700,
+        "priceFemale": 800,
+        "longevity": "11 ans",
+        "picture": "assets/img/medium/basset.jpg",
+        "topSelling": false
+    },
+    {
+        "category": "medium",
+        "dogName": "beagle",
+        "dogReference": "ME002",
+        "weight/height": "11 kg et 38 cm",
+        "description": "gentil",
+        "priceMale": 900,
+        "priceFemale": 1000,
+        "longevity": "14 ans",
+        "picture": "assets/img/medium/beagle;jpg",
+        "topSelling": true
+    },
+    {
+        "category": "medium",
+        "dogName": "buldog francais",
+        "dogReference": "ME003",
+        "weight/height": "13 kg et 36 cm",
+        "description": "gentil",
+        "priceMale": 1300,
+        "longevity": "11 ans",
+        "picture": "assets/img/medium/bouldogueFrançais",
+        "topSelling": false
+    },
+    {
+        "category": "medium",
+        "dogName": "caniche",
+        "dogReference": "ME004",
+        "weight/height": " 24 kg et 27 cm",
+        "description": "gentil",
+        "priceMale": 1100,
+        "priceFemale": 1300,
+        "longevity": "15 ans",
+        "picture": "assets/img/medium/caniche.jpeg",
+        "topSelling": false
+    },
+    {
+        "category": "medium",
+        "dogName": "jack Russel",
+        "dogReference": "ME004",
+        "weight/height": "7 kg et 32 cm",
+        "description": "gentil",
+        "priceMale": 1300,
+        "priceFemale": 1400,
+        "longevity": "14 ans",
+        "picture": "assets/img/medium/jackRussel.jpg",
+        "topSelling": false
+    },
+    {
+        "category": "maxi",
+        "dogName": "Labrador",
+        "dogReference": "MA001",
+        "weight/height": "33 kg et 60 cm",
+        "description": "gentil",
+        "priceMale": 1000,
+        "priceFemale": 1200,
+        "longevity": "12 ans",
+        "picture": "assets/img/maxi/labrador.jpg",
+        "topSelling": false
+    },
+    {
+        "category": "maxi",
+        "dogName": "Berger australien",
+        "dogReference": "MA002",
+        "weight/height": "28 kg et 54 cm",
+        "description": "gentil",
+        "priceMale": 1300,
+        "priceFemale": 1600,
+        "longevity": "14 ans",
+        "picture": "assets/img/maxi/bergerAustralien",
+        "topSelling": false
+    },
+    {
+        "category": "maxi",
+        "dogName": "Border Collie",
+        "dogReference": "MA003",
+        "weight/height": "16 kg et 52 cm",
+        "description": "gentil",
+        "priceMale": 1500,
+        "priceFemale": 1700,
+        "longevity": "13 ans",
+        "picture": "assets/img/maxi/border.jpg",
+        "topSelling": false
+    },
+    {
+        "category": "maxi",
+        "dogName": "Boxer",
+        "dogReference": "MA004",
+        "weight/height": "30 kg et 60 cm",
+        "description": "gentil",
+        "priceMale": 1300,
+        "priceFemale": 1600,
+        "longevity": "11 ans",
+        "picture": "assets/img/maxi/Boxer.jpg",
+        "topSelling": false
+    },
+    {
+        "category": "maxi",
+        "dogName": "Husky",
+        "dogReference": "MA005",
+        "weight/height": "24 kg et 64 cm",
+        "description": "gentil",
+        "priceMale": 1500,
+        "priceFemale": 1800,
+        "longevity": "14 ans",
+        "picture": "assets/img/maxi/husky.jpg",
+        "topSelling": false
+    },
+    {
+        "Category": "geant",
+        "dogName": "Bouvier Bernois",
+        "dogReference": "G001",
+        "weight/height": "55 kg et 68 cm",
+        "description": "gentil",
+        "priceMale": 1300,
+        "priceFemale": 1300,
+        "longevity": "7 ans",
+        "picture": "assets/img/geant/bouvierBernois",
+        "topSelling": false
+    },
+    {
+        "Category": "geant",
+        "dogName": "Dogue Allemand",
+        "dogReference": "G002",
+        "weight/height": "58 kg et 80 cm",
+        "description": "gentil",
+        "priceMale": 1700,
+        "priceFemale": 1900,
+        "longevity": "7 ans",
+        "picture": "assets/img/geant/dogueAllemand",
+        "topSelling": false
+    },
+    {
+        "Category": "geant",
+        "dogName": "Chien de montagnes des Pyrénées",
+        "dogReference": "G003",
+        "weight/height": "52 kg et 78 cm",
+        "description": "gentil",
+        "priceMale": 1600,
+        "priceFemale": 1800,
+        "longevity": "11 ans",
+        "picture": "assets/img/geant/montagnes.jpg",
+        "topSelling": false
+    },
+    {
+        "Category": "geant",
+        "dogName": "Saint Bernard",
+        "dogReference": "G004",
+        "weight/height": "80 kg et 80 cm",
+        "description": "gentil",
+        "priceMale": 1600,
+        "priceFemale": 1800,
+        "longevity": "9 ans",
+        "picture": "assets/img/geant/SaintBernard.jpeg",
+        "topSelling": false
+    },
+    {
+        "Category": "geant",
+        "dogName": "Terre-Neuve",
+        "dogReference": "G005",
+        "weight/height": "65 kg et 71 cm",
+        "description": "gentil",
+        "priceMale": 1500,
+        "priceFemale": 1700,
+        "longevity": "9 ans",
+        "picture": "assets/img/geant/terreNeuve.jpg",
+        "topSelling": false
+    }
 
-}
-
-.info
-{
-  margin-right:100em;
-}
-.monter
-{
-margin-top: -170px;
-margin-right: 450px;
-
-}
-article
-{
-
-  margin-left: 30%;
-
-}
-
-body {
-  background-color: #343436;
-}
-body {
-  font-family: sans-serif;
-  text-align: center;
-  background: #222629;
-  color:#888
-}
-ul {
-  display: inline-block;
-  margin: 0;
-  padding:0;
-  list-style: none;
-  box-shadow: 0 5px 5px #000;
-}
-a{
-  display: inline-block;
-  font-weight: bold;
-  font-size:23px;
-  color:#222;
-  text-decoration:none;
-  padding: 15px 20px;
-}
-
-ul li {
-  background: #fff;
-  padding:0px;
-  position: relative;
-  transition: all 0.2s;
-  float:left
-}
-
-ul li ul{
-  padding: 0px;
-  margin:0;
-  position: absolute;
-  top: 57px;
-  left: 0;
-  box-shadow: none;
-  display: none;
-}
-
-ul li:hover ul {
-  display: block;
-}
-ul ul li{
-  float:none;
-}
-
-ul li:hover{
-  background: #aef;
-  color: #fff;
-}
-/* skill bar */
-* {margin: 0; padding: 0; outline: none;}
-
-h2 {
-  font-size: 2.7em;
-  font-weight: normal;
-  padding: 10px 0 16px 0;
-  margin: 0 0 30px;
-  text-align:center;
-  color:#2187e7;
-  text-shadow: 1px 1px 5px #000, 0 0 10px #2187e7, 0 0 20px #2187e7;
-  background:#000;
-  border-radius:2px;
-  border: 1px solid #2187e7;
-  box-shadow: 0px 0px 50px -8px #2187e7;
-}
-h2.plataformas {
-  border: 1px solid #9ACD32;
-  box-shadow: 0px 0px 50px -8px #9ACD32;
-  color: #9ACD32;
-  text-shadow: 1px 1px 5px #000, 0 0 10px #9ACD32, 0 0 20px #9ACD32;
-}
-
-h2.programas {
-  border: 1px solid #FF4500;
-  box-shadow: 0px 0px 50px -8px #FF4500;
-  color: #FF4500;
-  text-shadow: 1px 1px 5px #000, 0 0 10px #FF4500, 0 0 20px #FF4500;
-}
-
-img {
--moz-transition-duration:0.7s;
--moz-transition-timing-function:ease;
--webkit-transition-duration:0.7s;
--webkit-transition-timing-function:ease;
-transition-duration:0.7s;
-transition-timing-function:ease;
-width:150px;
-height:150px;
-
-
-}
-
-img:hover {
--moz-transform:rotate(360deg);
--webkit-transform:rotate(360deg);
-transform:rotate(360deg);
-
-}
-
-.container {
-  width: 90%;
-  padding:5%;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.col {
-  width: 23%;
-  margin: 0 5%;
-  position: relative;
-  float: left;
-  font-size: 12px;
-  line-height: 2em;
-  padding: 5% 0;
-}
-/*.col { width:101%; }*/
-.skill {
-  list-style:none;
-  padding-top:30px;
-}
-
-.skill li {
-  margin-bottom:70px;
-  width : 300px;
-  background:#030303;
-  height:6px;
-  border-radius:3px;
-  border-left:1px solid #111;
-  border-top:1px solid #111;
-  border-right:1px solid #333;
-  border-bottom:1px solid #333;
-}
-
-.skill li em {
-  position:relative;
-  font-style: normal;
-  font-size: 14px;
-  text-align: center;
-  color:#dedede;
-  top:-28px;
-}
-
-.blueline {
-  height: 3px;
-  margin: 2px 0;
-  background: #2187e7;
-  position: absolute;
-  box-shadow: 0px 0px 10px 1px rgba(0,198,255,0.6);
-  left:0
-}
-.greenline {
-  height: 3px;
-  margin: 2px 0;
-  background: #9ACD32;
-  position: absolute;
-  box-shadow: 0px 0px 10px 1px rgba(173, 255, 47,0.4);
-  left:0
-}
-.redline {
-  height: 3px;
-  margin: 2px 0;
-  background: #FF4500;
-  position: absolute;
-  box-shadow: 0px 0px 10px 1px rgba(255, 69, 0,0.4);
-  left:0
-}
-
-.titulo      { opacity:1;  animation:titulo 5s ease-out;     }
-
-/*programation*/
-.html        { width:60%;  animation:html 2s easee;       }
-.css         { width:55%;  animation:css 2s ease-out;        }
-.php         { width:50%;  animation:php 2s ease-out;        }
-.javascript  { width:30%;  animation:javascript 2s ease-out; }
-.jquery      { width:10%;  animation:jquery 2s ease-out;     }
-
-/*programmes*/
-.wordpress   { width:70%;  animation:wordpress 2s ease-out;  }
-.github  { width:40%;  animation:prestashop 2s ease-out; }
-.phpmyadmin      { width:60%;  animation:joomla 2s ease-out;     }
-.photoshop     { width:70%;  animation:blogger 2s ease-out;    }
-.gimp      { width:20%;  animation:drupal 2s ease-out;     }
-.atom      { width:80%;  animation:atom 2s ease-out;     }
-
-/*plateforme*/
-.osx { width:90%;  animation:osx 2s ease-out;}
-.windows { width:85%;  animation:windows 2s ease-out;}
-.linux   { width:80%;  animation:linux 2s ease-out;  }
-.linuxlc    { width:20%;  animation:linuxlc 2s ease-out;   }
-
-
-@keyframes titulo      { 0% { opacity:0; } 100% { opacity:1; }  }
-
-/*programation*/
-@keyframes html        { 0% { width:0px; } 100% { width:90%; }  }
-@keyframes css         { 0% { width:0px; } 100% { width:95%; }  }
-@keyframes php         { 0% { width:0px; } 100% { width:70%; }  }
-@keyframes javascript  { 0% { width:0px; } 100% { width:50%; }  }
-@keyframes jquery      { 0% { width:0px; } 100% { width:30%; }  }
-
-/*plateformes*/
-@keyframes wordpress   { 0% { width:0px; } 100% { width:80%; }  }
-@keyframes github  { 0% { width:0px; } 100% { width:60%; }  }
-@keyframes phpmyadmin      { 0% { width:0px; } 100% { width:40%; }  }
-@keyframes photoshop     { 0% { width:0px; } 100% { width:70%; }  }
-@keyframes gimp      { 0% { width:0px; } 100% { width:20%; }  }
-@keyframes atom     { 0% { width:0px; } 100% { width:70%; }  }
-
-/*programes*/
-@keyframes osx { 0% { width:0px; } 100% { width:90%; }  }
-@keyframes windows { 0% { width:0px; } 100% { width:30%; }  }
-@keyframes linux   { 0% { width:0px; } 100% { width:70%; }  }
-@keyframes linuxlc    { 0% { width:0px; } 100% { width:50%; }  }
-
-/*media queries*/
-@media (max-width: 1200px){
-  h2 {font-size:2.2em;}
-}
-@media (max-width: 980px){
-  h2 {font-size:1.8em;}
-}
-@media (max-width: 767px){
-  h2 {font-size:1.4em;}
-}
-@media (max-width: 580px){
-  h2 {font-size:1.1em; padding:10px 0;}
-}
-@media (max-width: 480px){
-  h2 {font-size:2.2em; padding: 10px 0 15px 0;}
-  .col {width: 90%;}
-}
-
-/*Test*/
-
-@keyframes checked-anim {
-  50% {
-    width: 3000px;
-    height: 3000px;
-  }
-  100% {
-    width: 100%;
-    height: 100%;
-    border-radius: 0;
-  }
-}
-@keyframes not-checked-anim {
-  0% {
-    width: 3000px;
-    height: 3000px;
-  }
-}
-/*Favicon*/
+]
