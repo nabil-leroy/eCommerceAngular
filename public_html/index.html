@@ -40,7 +40,7 @@
         </div>
         <div ng-controller="topSellCtrl" class="row small-up-2 large-up-4">
             <div class="column" ng-repeat="item in items| filter:{'topSelling':true}">
-                <img class="thumbnail" src={{item.img}} alt={{item.dogName}} title={{item.dogName}}>
+                <img class="thumbnail" src={{item.picture}} alt={{item.dogName}} title={{item.dogName}}>
                 <p>{{item.dogName}}</p>
                 <p>Mâle : {{item.priceMale| currency:"€"}} <i class="button fa fa-cart-arrow-down fa-2x"></i></p>
                 <p>Femelle : {{item.priceFemale| currency:"€"}} <i class="button fa fa-cart-arrow-down fa-2x"></i></p>
