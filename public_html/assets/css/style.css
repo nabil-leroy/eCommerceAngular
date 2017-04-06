@@ -1,0 +1,315 @@
+/*-- header --*/
+html,body {
+	font-family: 'Arimo-Regular';
+	background:#FFF;
+	font-size:100%;
+}
+@font-face {
+   font-family: 'Arimo-Regular';
+   src: url(../fonts/Arimo-Regular.ttf)format('truetype');
+}
+@font-face {
+   font-family: 'PoiretOne-Regular';
+   src: url(../fonts/PoiretOne-Regular.ttf)format('truetype');
+}
+/*modal*/
+body {
+    padding-top: 0px;
+}
+.panel-login {
+	border-color: #ccc;
+	-webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+}
+.panel-login>.panel-heading {
+	color: #00415d;
+	background-color: #fff;
+	border-color: #fff;
+	text-align:center;
+}
+.panel-login>.panel-heading a{
+	text-decoration: none;
+	color: #666;
+	font-weight: bold;
+	font-size: 15px;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+.panel-login>.panel-heading a.active{
+	color: #009CDC;
+	font-size: 18px;
+}
+.panel-login>.panel-heading hr{
+	margin-top: 10px;
+	margin-bottom: 0px;
+	clear: both;
+	border: 0;
+	height: 1px;
+	background-image: -webkit-linear-gradient(left,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0));
+	background-image: -moz-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+	background-image: -ms-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+	background-image: -o-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+}
+.panel-login input[type="text"],.panel-login input[type="email"],.panel-login input[type="password"] {
+	height: 45px;
+	border: 1px solid #ddd;
+	font-size: 16px;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+.panel-login input:hover,
+.panel-login input:focus {
+	outline:none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border-color: #ccc;
+}
+.btn-login {
+	background-color: #59B2E0;
+	outline: none;
+	color: #fff;
+	font-size: 14px;
+	height: auto;
+	font-weight: normal;
+	padding: 14px 0;
+	text-transform: uppercase;
+	border-color: #59B2E6;
+}
+.btn-login:hover,
+.btn-login:focus {
+	color: #fff;
+	background-color: #53A3CD;
+	border-color: #53A3CD;
+}
+.forgot-password {
+	text-decoration: underline;
+	color: #888;
+}
+.forgot-password:hover,
+.forgot-password:focus {
+	text-decoration: underline;
+	color: #666;
+}
+
+.btn-register {
+	background-color: #1CB94E;
+	outline: none;
+	color: #fff;
+	font-size: 14px;
+	height: auto;
+	font-weight: normal;
+	padding: 14px 0;
+	text-transform: uppercase;
+	border-color: #1CB94A;
+}
+.btn-register:hover,
+.btn-register:focus {
+	color: #fff;
+	background-color: #009CDC;
+	border-color: #009CDC;
+}
+
+
+/*-- header --*/
+
+.header-top{
+  background: #3D3D3D;
+  padding: 1.2em 0;
+}
+.header-top-left{
+	float:left;
+}
+.header-top-left ul{
+	padding:0;
+	margin: .3em 0 0 0;
+}
+.header-top-left ul li{
+	display:inline-block;
+	margin: 0 1em;
+}
+.header-top-left ul li a{
+	color: #FFF;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 400;
+}
+.header-top-left ul li a:hover{
+	color:#20aedc;
+	transition: .5s all;
+	-webkit-transition: .5s all;
+	-moz-transition:.5s all;
+}
+.header-middle {
+	padding: 1em 0;
+}
+.header-top-right form input[type="text"] {
+	font-size: 16px;
+	color: #C8C8C8;
+	float: left;
+	outline: none;
+	border: 1px solid #808080;
+	padding: 0.2em;
+	-webkit-appearance: none;
+}
+.header-top-right form input[type="submit"] {
+  color: #FFF;
+  background: url(../images/icons.png) no-repeat -3px -8px;
+  width: 19px;
+  font-size: 16px;
+  float: left;
+  border: none;
+  outline: none;
+  padding: 0.25em 1.2em;
+  text-transform: uppercase;
+  -webkit-appearance: none;
+}
+.header-middle-logo{
+  float: left;
+}
+.header-middle-logo a{
+  font-family: 'PoiretOne-Regular';
+  font-size: 4em;
+  text-decoration: none;
+  color: #8d9293;
+}
+.header-middle-logo a:hover{
+	color:#8d9293;
+	text-decoration:none;
+}
+.header-middle-right{
+	float:right;
+	width: 50%;
+	margin-top: .5em;
+}
+.phone{
+	float:left;
+}
+.phone span{
+	background: url(../images/icons.png) no-repeat -45px 8px;
+	float: left;
+	width: 33px;
+	display: block;
+	height: 51px;
+}
+.phone ul{
+	padding:0;
+	margin: 0 0 0 1em;
+	float:right;
+}
+.phone ul li{
+  display: block;
+  color: #BEBEBE;
+  font-size: 14px;
+}
+.phone ul li.gray{
+  font-size: 16px;
+  color: #747474;
+}
+.location{
+	float: left;
+	margin-left: 5em;
+}
+.location span{
+	background: url(../images/icons.png) no-repeat -91px 8px;
+	float: left;
+	width: 33px;
+	display: block;
+	height: 51px;
+}
+.location ul{
+	padding:0;
+	margin: 0 0 0 1em;
+	float:right;
+}
+.location ul li{
+	display: block;
+	color: #BEBEBE;
+	font-size: 14px;
+}
+.location ul li.gray{
+  font-size: 16px;
+  color: #747474;
+}
+.top-nav{
+  background: #009CDC;
+  padding: 1.5em 0;
+}
+.top-nav ul{
+	padding:0;
+	margin:0;
+}
+.top-nav ul li{
+display: inline-block;
+  margin: 0;
+  float: left;
+}
+.top-nav ul li a{
+  color: #FFF;
+  font-size: 18px;
+  padding: 1.3em 2.8em 1.35em;
+  text-decoration: none;
+}
+.top-nav ul li a.active{
+  background: #04155A;
+}
+.top-nav ul li a:hover{
+  background: #262F3E;
+  transition: .5s all;
+  -webkit-transition: .5s all;
+  -moz-transition: .5s all;
+  -o-transition: .5s all;
+  -ms-transition: .5s all;
+}
+.blue{
+  background: #262F3E;
+  padding: .2em 0;
+}
+/*-- banniére --*/
+.banner{
+  background: url(../images/s1.jpg) no-repeat 0px -134px;
+  min-height: 640px;
+  background-size: cover;
+  position: relative;
+}
+.banner-img{
+  background: url(../images/8.jpg) no-repeat 0px -24px;
+  min-height: 640px;
+  background-size: cover;
+  position: relative;
+}
+.banner-info {
+	position: absolute;
+	top: 32%;
+	left: 30%;
+}
+.banner-info h2{
+	color: #FFF;
+	font-size: 29px;
+	font-weight: 700;
+	margin: 0;
+}
+.button {
+	margin: 19em 0 0 44em;
+}
+.button a{
+	font-size: 16px;
+	color: #20aedc;
+	font-weight: 700;
+	padding: 1em;
+	border: 1px solid #20aedc;
+	text-transform: uppercase;
+}
+.button a:hover{
+	color:#FFF;
+	text-decoration:none;
+	border: 1px solid #FFF;
+	transition: .5s all;
+	-webkit-transition: .5s all;
+	-moz-transition: .5s all;
+	-o-transition: .5s all;
+	-ms-transition: .5s all;
+}
