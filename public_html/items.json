@@ -129,7 +129,7 @@
         "priceFemale": 1200,
         "longevity": "12 ans",
         "picture": "assets/img/maxi/labrador.jpg",
-        "topSelling": false
+        "topSelling": true
     },
     {
         "category": "maxi",
@@ -237,7 +237,7 @@
         "priceFemale": 1700,
         "longevity": "9 ans",
         "picture": "assets/img/geant/terreNeuve.jpg",
-        "topSelling": false
+        "topSelling": true
     }
 
 ]
