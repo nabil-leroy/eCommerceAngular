@@ -39,11 +39,11 @@
     {
         "category": "small",
         "dogName": "spitz",
-        "dogReference": "SM003",
+        "dogReference": "SM004",
         "weight/height": "10 kg et 34 cm",
         "description": "gentil",
         "priceMale": 700,
-        "priceFemale": 900,
+        "priceFemale": 1000,
         "longevity": "14 ans",
         "picture": "assets/img/mini/spitz.jpg",
         "topSelling": true
@@ -51,7 +51,7 @@
     {
         "category": "small",
         "dogName": "yorkshire",
-        "dogReference": "SM004",
+        "dogReference": "SM005",
         "weight/height": "3 à 5 kg et 17 cm",
         "description": "gentil",
         "priceMale": 1200,
@@ -110,7 +110,7 @@
     {
         "category": "medium",
         "dogName": "jack Russel",
-        "dogReference": "ME004",
+        "dogReference": "ME005",
         "weight/height": "7 kg et 32 cm",
         "description": "gentil",
         "priceMale": 1300,
