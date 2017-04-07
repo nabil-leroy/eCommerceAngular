@@ -42,8 +42,14 @@
             <div class="column" ng-repeat="item in items| filter:{'topSelling':true}">
                 <img class="thumbnail" src={{item.picture}} alt={{item.dogName}} title={{item.dogName}}>
                 <p>{{item.dogName}}</p>
-                <p>Mâle : {{item.priceMale| currency:"€"}} <i class="button fa fa-cart-arrow-down fa-2x"></i></p>
-                <p>Femelle : {{item.priceFemale| currency:"€"}} <i class="button fa fa-cart-arrow-down fa-2x"></i></p>
+                <div class="row align-justify">
+                    <p class="large-8 column align-self-middle">Mâle : {{item.priceMale| currency:"€"}}</p>
+                    <button class="large-2 column align-self-middle button fa fa-cart-arrow-down" ng-click='addCart(item.dogReference, "male")'></button>
+                </div>
+                <div class="row align-justify">
+                    <p class="large-8 column align-self-middle">Femelle : {{item.priceFemale| currency:"€"}}</p>
+                    <button class="large-2 column align-self-middle button fa fa-cart-arrow-down" ng-click='addCart(item.dogReference, "female")'></button>
+                </div>
             </div>
         </div>
         <hr>
@@ -88,12 +94,50 @@
         <script>
                 var ecommerceApp = angular.module('ecommerceApp', []);
                 ecommerceApp.controller('topSellCtrl', [ '$scope', '$http', function($scope, $ĥttp){
-                $ĥttp.get('items.json').then(function (response){
-                    $scope.items = response.data;
+                $scope.cartItems = [];
+                $ĥttp.get('assets/js/items.json').then(function (response){
+                $scope.items = response.data;
                 });
+                $scope.addCart = function(dogReference, gender){
+                    var index = 0;
+                    var isFound = false;
+                ($scope.items).forEach(function(element){
+                    if(element.dogReference !== dogReference && !isFound)
+                    {
+                        index++;
+                    }
+                    else
+                    {
+                        isFound = true;
+                    }
+                });
+                if (gender === "male")
+                {
+                var price = $scope.items[index].priceMale;
+                }
+                else
+                {
+                var price = $scope.items[index].priceFemale;
+                }
+                var doesExist = (Object.values($scope.cartItems)).indexOf($scope.items[index].dogReference);
+                if (doesExist !== - 1)
+                {
+                $scope.cartItems[doesExist].quantity++;
+                }
+                else
+                {
+                $scope.cartItems.push({
+                "dogReference": $scope.items[index].dogReference,
+                        "dogName": $scope.items[index].dogName,
+                        "quantity": 1,
+                        "gender": gender,
+                        "price": price
+                });
+                }
+                };
                 }]);
                 ecommerceApp.controller('CartCtrl', [function(){
-
+                
                 }]);
         </script>
     </body>

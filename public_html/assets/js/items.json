@@ -82,7 +82,7 @@
         "priceFemale": 1000,
         "longevity": "14 ans",
         "picture": "assets/img/medium/beagle.jpg",
-        "topSelling": true
+        "topSelling": false
     },
     {
         "category": "medium",
@@ -117,7 +117,7 @@
         "priceFemale": 1400,
         "longevity": "14 ans",
         "picture": "assets/img/medium/jackRussel.jpg",
-        "topSelling": false
+        "topSelling": true
     },
     {
         "category": "maxi",
