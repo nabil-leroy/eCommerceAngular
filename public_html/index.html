@@ -103,7 +103,7 @@
         </div>
         <hr>
         <div ng-controller='CartCtrl' class="large reveal" id="cartModal" data-reveal>
-           <div class="row">
+           <div class="row hide-for-small-only">
                <div class="medium-2 column">Ref.</div>
                <div class="medium-2 column">Race</div>
                <div class="medium-2 column">Quantité</div>
@@ -112,28 +112,22 @@
                <div class="medium-2 column">Supprimer</div>
            </div>
            <div ng-repeat='item in cartDogs' class="row">
-               <div class="medium-2 column" ng-bind="item.dogReference"></div>
-               <div class="medium-2 column" ng-bind="item.dogName + ' ' + item.gender"></div>
-               <div class="medium-2 column">
-                   <div class="medium-3 column">
-                       <button ng-click="" class="button alert fa fa-minus" ></button>
+               <div class="hide-for-small-only medium-2 column" ng-bind="item.dogReference"></div>
+               <div class="small-6 medium-2 column" ng-bind="item.dogName + ' ' + item.gender"></div>
+               <div class="small-6  medium-2 column">
+                       <input type="number" ng-model='item.quantity' min="0">
                    </div>
-                   <div class="medium-6 column">
-                       <input type="text" ng-model='item.quantity'>
-                   </div>
-                   <div class="medium-3 column">
-                       <button ng-click="" class="button success fa fa-plus" ></button>
-                   </div>
-               </div>
-               <div class="medium-2 column" ng-bind="item.price | currency: '€'"></div>
-               <div class="medium-2 column" ng-bind="item.price * item.quantity | currency: '€'"></div>
-               <div class="medium-2 column"><button ng-click="remove($index)" class="button alert fa fa-trash-o fa-lg" ></button></div>
+               <div class="hide-for-small-only medium-2 column" ng-bind="item.price | currency: '€'"></div>
+               <div class="small-6  medium-2 column" ng-bind="item.price * item.quantity | currency: '€'"></div>
+               <div class="small-6 medium-2 column"><button ng-click="cartDogs.splice($index,1)" class="button alert fa fa-trash-o fa-lg" ></button></div>
+           <hr/>
            </div>
            <span>Total : <strong ng-bind="getTotal() | currency: '€'"></strong></span>
            <div><button class="close-button" data-close aria-label="Close modal" type="button">
                    <span aria-hidden="true">&times;</span>
                </button>
            </div>
+           
        </div>
         <footer class="footer">
             <div class="row full-width">
