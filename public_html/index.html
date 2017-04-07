@@ -62,9 +62,9 @@
                 <div class="medium-2 column">Prix</div>
                 <div class="medium-2 column">Supprimer</div>
             </div>
-            <div ng-repeat='item in items' class="row">
-                <div class="medium-2 column" ng-bind="item.ref"></div>
-                <div class="medium-2 column" ng-bind="item.title"></div>
+            <div ng-repeat='item in cartDogs' class="row">
+                <div class="medium-2 column" ng-bind="item.dogReference"></div>
+                <div class="medium-2 column" ng-bind="item.dogName + ' ' + item.gender"></div>
                 <div class="medium-2 column">
                     <div class="medium-3 column">
                         <button ng-click="" class="button alert fa fa-minus" ></button>
@@ -93,52 +93,63 @@
         <script src="assets/js/app.js" type="text/javascript"></script>
         <script>
                 var ecommerceApp = angular.module('ecommerceApp', []);
-                ecommerceApp.controller('topSellCtrl', [ '$scope', '$http', function($scope, $ĥttp){
-                $scope.cartItems = [];
-                $ĥttp.get('assets/js/items.json').then(function (response){
-                $scope.items = response.data;
+                ecommerceApp.service('productService', function () {
+                    var cartItems = [];
+                    var addProduct = function (obj, dogReference, gender) {
+                        var index = 0;
+                        var isFound = false;
+                        (obj).forEach(function (element) {
+                            if (element.dogReference !== dogReference && !isFound) {
+                                index++;
+                            } else {
+                                isFound = true;
+                            }
+                        });
+                        isFound = false;
+                        var cartIndex = 0;
+                        cartItems.forEach(function (element) {
+                            if (element.dogReference !== dogReference && !isFound) {
+                                cartIndex++;
+                            } else {
+                                isFound = true;
+                            }
+                        });
+                        if (isFound === true) {
+                            cartItems[cartIndex].quantity++;
+                        } else {
+                            if (gender === "male") {
+                                var price = obj[index].priceMale;
+                            } else {
+                                var price = obj[index].priceFemale;
+                            }
+                            cartItems.push({
+                                "dogReference": obj[index].dogReference,
+                                "dogName": obj[index].dogName,
+                                "quantity": 1,
+                                "gender": gender,
+                                "price": price
+                            });
+                        }
+                    };
+                    var getProducts = function () {
+                        return cartItems;
+                    };
+                    return {
+                        addProduct: addProduct,
+                        getProducts: getProducts
+                    };
                 });
-                $scope.addCart = function(dogReference, gender){
-                    var index = 0;
-                    var isFound = false;
-                ($scope.items).forEach(function(element){
-                    if(element.dogReference !== dogReference && !isFound)
-                    {
-                        index++;
-                    }
-                    else
-                    {
-                        isFound = true;
-                    }
-                });
-                if (gender === "male")
-                {
-                var price = $scope.items[index].priceMale;
-                }
-                else
-                {
-                var price = $scope.items[index].priceFemale;
-                }
-                var doesExist = (Object.values($scope.cartItems)).indexOf($scope.items[index].dogReference);
-                if (doesExist !== - 1)
-                {
-                $scope.cartItems[doesExist].quantity++;
-                }
-                else
-                {
-                $scope.cartItems.push({
-                "dogReference": $scope.items[index].dogReference,
-                        "dogName": $scope.items[index].dogName,
-                        "quantity": 1,
-                        "gender": gender,
-                        "price": price
-                });
-                }
-                };
-                }]);
-                ecommerceApp.controller('CartCtrl', [function(){
-                
-                }]);
+                ecommerceApp.controller('topSellCtrl', ['$scope', '$http', 'productService', function ($scope, $ĥttp, productService) {
+                        $ĥttp.get('assets/js/items.json').then(function (response) {
+                            $scope.items = response.data;
+                        });
+                        $scope.addCart = function (dogReference, gender) {
+                            productService.addProduct($scope.items, dogReference, gender);
+                        };
+                    }]);
+                ecommerceApp.controller('CartCtrl', ['$scope','productService', function ($scope, productService) {
+                     $scope.cartDogs = productService.getProducts();
+                    }]);
         </script>
     </body>
 </html>
