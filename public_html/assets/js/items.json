@@ -91,6 +91,7 @@
         "measurement": "13 kg et 36 cm",
         "description": "gentil",
         "priceMale": 1300,
+        "priceFemale": 1500,
         "longevity": "11 ans",
         "picture": "assets/img/medium/bouldogueFrançais.jpg",
         "topSelling": false
@@ -180,7 +181,7 @@
         "topSelling": false
     },
     {
-        "Category": "geant",
+        "category": "geant",
         "dogName": "Bouvier Bernois",
         "dogReference": "G001",
         "measurement": "55 kg et 68 cm",
@@ -192,7 +193,7 @@
         "topSelling": false
     },
     {
-        "Category": "geant",
+        "category": "geant",
         "dogName": "Dogue Allemand",
         "dogReference": "G002",
         "measurement": "58 kg et 80 cm",
@@ -204,8 +205,8 @@
         "topSelling": false
     },
     {
-        "Category": "geant",
-        "dogName": "Chien de montagnes des Pyrénées",
+        "category": "geant",
+        "dogName": "Montagnes des Pyrénées",
         "dogReference": "G003",
         "measurement": "52 kg et 78 cm",
         "description": "gentil",
@@ -216,7 +217,7 @@
         "topSelling": false
     },
     {
-        "Category": "geant",
+        "category": "geant",
         "dogName": "Saint Bernard",
         "dogReference": "G004",
         "measurement": "80 kg et 80 cm",
@@ -228,7 +229,7 @@
         "topSelling": false
     },
     {
-        "Category": "geant",
+        "category": "geant",
         "dogName": "Terre-Neuve",
         "dogReference": "G005",
         "measurement": "65 kg et 71 cm",
