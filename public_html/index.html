@@ -95,20 +95,20 @@
                         </label>
                     </div>
                 </div>
-                <div class="row small-up-2 large-up-4" data-equalizer data-equalize-on="small">
-                    <div class="column" ng-repeat="dog in dogs = (items| filter: search | filter: filt | orderBy: sortList.value)">
-                        <p data-equalizer-watch><strong>{{dog.dogName}}</strong></p>
-                        <img data-equalizer-watch src={{dog.picture}} alt={{dog.dogName}} title={{dog.dogName}}>
-                        <p data-equalizer-watch>
+                <div class="row large-up-4" data-equalize-by-row='true'>
+                    <div class="small-8 small-offset-2 column" ng-repeat="dog in dogs = (items| filter: search | filter: filt | orderBy: sortList.value)">
+                        <p><strong>{{dog.dogName}}</strong></p>
+                        <img src={{dog.picture}} alt={{dog.dogName}} title={{dog.dogName}}>
+                        <p>
                             {{"Mensurations : " + dog.measurement}}
                             <br/>
                             {{"Éspérence de vie : " + dog.longevity}}
                         </p>
-                        <div class="row" data-equalizer-watch>
+                        <div class="row">
                             <p class="large-8 column">Mâle : {{dog.priceMale| currency:"€"}}</p>
                             <button class="large-2 column button fa fa-cart-arrow-down" ng-click='addCart(dog.dogReference, "male")'></button>
                         </div>
-                        <div class="row" data-equalizer-watch>
+                        <div class="row">
                             <p class="large-8 column">Femelle : {{dog.priceFemale| currency:"€"}}</p>
                             <button class="large-2 column button fa fa-cart-arrow-down" ng-click='addCart(dog.dogReference, "femelle")'></button>
                         </div>
