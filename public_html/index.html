@@ -25,11 +25,11 @@
                             <nav data-magellan>
                                 <ul class="vertical medium-horizontal dropdown menu" data-dropdown-menu ng-init="filt.category = ''">
                                     <li class="menu-text">Animalerie du Noyonnais</li>
-                                    <li ng-click="filt.category = ''" ng-class="{active:filt.category == ''}"><a href="#">Tous</a></li>
-                                    <li ng-click="filt.category = 'small'" ng-class="{active:filt.category == 'small'}"><a href="#">Mini</a></li>
-                                    <li ng-click="filt.category = 'medium'" ng-class="{active:filt.category == 'medium'}"><a href="#">Medium</a></li>
-                                    <li ng-click="filt.category = 'maxi'" ng-class="{active:filt.category == 'maxi'}"><a href="#">Maxi</a></li>
-                                    <li ng-click="filt.category = 'geant'" ng-class="{active:filt.category == 'geant'}"><a href="#">Géant</a></li>
+                                    <li ng-click="filt.category = ''" ng-class="{active:filt.category == ''}"><a href="#scrollDog">Tous</a></li>
+                                    <li ng-click="filt.category = 'small'" ng-class="{active:filt.category == 'small'}"><a href="#scrollDog">Mini</a></li>
+                                    <li ng-click="filt.category = 'medium'" ng-class="{active:filt.category == 'medium'}"><a href="#scrollDog">Medium</a></li>
+                                    <li ng-click="filt.category = 'maxi'" ng-class="{active:filt.category == 'maxi'}"><a href="#scrollDog">Maxi</a></li>
+                                    <li ng-click="filt.category = 'geant'" ng-class="{active:filt.category == 'geant'}"><a href="#scrollDog">Géant</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -87,7 +87,7 @@
                         </div>
                     </div>
                 </div>
-                <hr/>
+                <hr id="scrollDog"/>
                 <div class="row">
                     <div class="small-8 medium-2 medium-offset-10 column">
                         <label>Trie : 
