@@ -96,7 +96,7 @@
                     </div>
                 </div>
                 <div class="row large-up-4" data-equalize-by-row='true'>
-                    <div class="small-8 small-offset-2 column" ng-repeat="dog in dogs = (items| filter: search | filter: filt | orderBy: sortList.value)">
+                    <div class="small-8 small-offset-2 medium-offset-0 column" ng-repeat="dog in dogs = (items| filter: search | filter: filt | orderBy: sortList.value)">
                         <p><strong>{{dog.dogName}}</strong></p>
                         <img src={{dog.picture}} alt={{dog.dogName}} title={{dog.dogName}}>
                         <p>
